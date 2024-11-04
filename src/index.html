@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electron Note App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <!-- Dark mode toggle switch -->
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <h1>My Notes</h1>
+    </header>
+
+    <div id="content">
+      <aside id="sidebar">
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search notes...">
+
+
+        <ul id="notes-list"></ul>
+      </aside>
+
+      <main id="note-container">
+        <textarea id="note-content" placeholder="Write your note here..."></textarea>
+
+
+        <button id="save-btn">Save</button>
+        <button id="delete-btn">Delete</button>
+        <button id="export-pdf-btn">Export as PDF</button>
+        <button id="export-txt-btn">Export as .txt</button>
+      </main>
+    </div>
+
+    <footer>
+      <p>Contact us at <a href="mailto:support@noteapp.com">support@noteapp.com</a></p>
+      <p>&copy; 2024 NoteApp Inc. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="../renderer.js"></script>
+</body>
+</html>
